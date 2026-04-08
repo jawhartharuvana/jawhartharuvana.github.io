@@ -1,12 +1,14 @@
+/* RESET */
 body {
-  font-family: 'Inter', sans-serif;
-  background: #f4f4f4;
   margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f5f5f5;
+  color: #111;
 }
 
 /* CONTAINER */
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 40px auto;
   padding: 20px;
 }
@@ -14,43 +16,49 @@ body {
 /* HERO */
 .hero {
   position: relative;
-  height: 400px;
-  background: url('/assets/images/speaking.jpg') center/cover no-repeat;
+  height: 420px;
   border-radius: 20px;
   overflow: hidden;
-  color: white;
+  background: url('/assets/images/speaking.jpg') center/cover no-repeat;
 }
 
-.hero-overlay {
+/* DARK OVERLAY */
+.hero::before {
+  content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.2));
+  background: linear-gradient(to right, rgba(0,0,0,0.75), rgba(0,0,0,0.3));
 }
 
+/* HERO CONTENT */
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 30px;
+  padding: 40px;
+  max-width: 600px;
+  color: white;
 }
 
-/* IMAGE */
+/* PROFILE IMAGE */
 .avatar {
-  width: 160px;
-  height: 160px;
-  border-radius: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 16px;
   object-fit: cover;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  object-position: top; /* fixes head cut */
+  margin-bottom: 20px;
+  border: 2px solid rgba(255,255,255,0.3);
 }
 
 /* TEXT */
-.hero-text h1 {
+.hero h1 {
   font-size: 42px;
   margin: 0 0 10px;
 }
 
 .subtitle {
-  color: #d1d5db;
   font-size: 18px;
+  color: #d1d5db;
   margin-bottom: 20px;
 }
 
@@ -76,7 +84,7 @@ body {
   color: #c084fc;
 }
 
-/* GRID */
+/* GRID (Focus / Work / Approach) */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -88,33 +96,47 @@ body {
   background: white;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 /* SECTION */
 .section {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
-.avatar {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  object-position: top; /* shows your head */
-  border-radius: 16px;
+/* POSTS (BANNER STYLE) */
+.posts {
+  list-style: none;
+  padding: 0;
 }
 
 .posts li {
-  margin-bottom: 10px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .posts a {
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
+  color: #111;
 }
 
 .posts .date {
   display: block;
   font-size: 12px;
   color: #777;
+}
+
+/* ABOUT */
+.section p {
+  color: #444;
+  line-height: 1.6;
 }
