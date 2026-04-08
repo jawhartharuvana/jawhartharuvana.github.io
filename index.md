@@ -11,33 +11,33 @@ title: Muhammed Jawhar
 </div>
 
 <div class="section">
+  <h2>Focus</h2>
 
-## Focus
+  <p>
+    I examine power, institutions, and society through clear, structured writing.
+  </p>
 
-I examine power, institutions, and society through clear, structured writing.
-
-This is not casual blogging. It is deliberate thinking made public.
-
+  <p>
+    This is not casual blogging. It is deliberate thinking made public.
+  </p>
 </div>
 
 <div class="section">
+  <h2>Sections</h2>
 
-## Sections
-
-- Essays → Long-form arguments and analysis  
-- Notes → Short reflections and observations  
-- Photos → Visual documentation  
-
+  <ul>
+    <li>Essays → Long-form arguments and analysis</li>
+    <li>Notes → Short reflections and observations</li>
+    <li>Photos → Visual documentation</li>
+  </ul>
 </div>
 
 <div class="section">
+  <h2>Latest Writing</h2>
 
-## Latest Writing
-
-<ul>
-{% for post in site.posts %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
-
+  <ul>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
 </div>
