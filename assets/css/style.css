@@ -13,29 +13,35 @@ body {
   line-height: 1.6;
 }
 
-/* MAIN WRAPPER */
+/* CONTAINER */
 .container {
   max-width: 1100px;
   margin: 60px auto;
   padding: 20px;
 }
 
-/* HERO SECTION */
+/* HERO (DARK BANNER) */
 .hero {
   text-align: center;
-  background: #ffffff;
-  padding: 80px 30px;
+  padding: 100px 30px;
   border-radius: 30px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+
+  background: linear-gradient(135deg, #111, #1f2937);
+  color: white;
+
+  box-shadow: 0 25px 60px rgba(0,0,0,0.4);
 }
 
-/* PROFILE IMAGE */
+/* PROFILE IMAGE (ROUNDED RECTANGLE) */
 .avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 20px;
+  width: 130px;
+  height: 130px;
+  border-radius: 20px;
   object-fit: cover;
+  margin-bottom: 20px;
+
+  border: 3px solid rgba(255,255,255,0.2);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 /* TITLE */
@@ -47,7 +53,7 @@ h1 {
 
 /* SUBTITLE */
 .subtitle {
-  color: #666;
+  color: rgba(255,255,255,0.7);
   font-size: 18px;
   margin-bottom: 30px;
 }
@@ -65,8 +71,8 @@ h1 {
 
 /* PRIMARY BUTTON */
 .btn.primary {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
 }
 
 .btn.primary:hover {
@@ -75,16 +81,16 @@ h1 {
 
 /* SECONDARY BUTTON */
 .btn.secondary {
-  border: 1px solid #ccc;
-  color: #333;
-  background: white;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: white;
+  background: transparent;
 }
 
 .btn.secondary:hover {
-  background: #f0f0f0;
+  background: rgba(255,255,255,0.1);
 }
 
-/* SECTION BLOCK */
+/* SECTION WRAPPER */
 .section {
   margin-top: 40px;
   background: white;
@@ -114,19 +120,19 @@ h1 {
   margin-bottom: 8px;
 }
 
-/* GRID (for future upgrade) */
+/* GRID (for 3 cards like your layout) */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 /* CARD */
 .card {
-  background: white;
+  background: #fafafa;
   padding: 20px;
   border-radius: 18px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.04);
 }
 
 /* LINKS */
@@ -142,10 +148,14 @@ a:hover {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero {
-    padding: 50px 20px;
+    padding: 60px 20px;
   }
 
   h1 {
     font-size: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
