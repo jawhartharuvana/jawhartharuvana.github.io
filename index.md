@@ -43,7 +43,10 @@ Political thought. Social analysis. Structured writing.
 <div class="section">
 <h3>Latest Writing</h3>
 <ul>
-<li><a href="#">Why I Started Writing Publicly</a></li>
-<li><a href="#">This is why I'm writing</a></li>
+{% for post in site.posts limit:5 %}
+<li>
+<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+</li>
+{% endfor %}
 </ul>
 </div>
