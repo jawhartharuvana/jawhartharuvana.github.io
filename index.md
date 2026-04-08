@@ -51,3 +51,11 @@ Political thought. Social analysis. Structured writing.
     {% endfor %}
   </ul>
 </div>
+
+<div class="section">
+  <h3>About</h3>
+  <p>
+    I write on power, institutions, and society. This space is for structured thinking,
+    not casual blogging.
+  </p>
+</div>
