@@ -52,6 +52,7 @@ Political thought. Social analysis. Structured writing.
   </ul>
 </div>
 
+
 <div class="section">
   <h3>About</h3>
   <p>
