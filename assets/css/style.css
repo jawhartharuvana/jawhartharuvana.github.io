@@ -14,28 +14,14 @@ body {
 }
 
 /* HERO */
-<div class="hero">
-
-  <div class="hero-overlay"></div>
-
-  <div class="hero-content">
-
-    <img src="{{ '/assets/images/1775531266065.jpg' | relative_url }}" class="avatar">
-
-    <h1>Muhammed Jawhar</h1>
-
-    <p class="subtitle">
-      Political thought. Social analysis. Structured writing.
-    </p>
-
-    <div class="buttons">
-      <a href="/essays" class="btn primary">Read Essays</a>
-      <a href="/about" class="btn secondary">Contact</a>
-    </div>
-
-  </div>
-
-</div>
+.hero {
+  position: relative;
+  height: 420px;
+  background: url('/assets/images/speaking.jpg') center/cover no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+}
 
 /* DARK OVERLAY */
 .hero::before {
@@ -51,7 +37,6 @@ body {
   z-index: 2;
   padding: 40px;
   max-width: 600px;
-  color: white;
 }
 
 /* PROFILE IMAGE */
@@ -60,7 +45,7 @@ body {
   height: 120px;
   border-radius: 16px;
   object-fit: cover;
-  object-position: top; /* fixes head cut */
+  object-position: top;
   margin-bottom: 20px;
   border: 2px solid rgba(255,255,255,0.3);
 }
@@ -99,7 +84,7 @@ body {
   color: #c084fc;
 }
 
-/* GRID (Focus / Work / Approach) */
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -124,7 +109,7 @@ body {
   margin-top: 40px;
 }
 
-/* POSTS (BANNER STYLE) */
+/* POSTS */
 .posts {
   list-style: none;
   padding: 0;
@@ -154,4 +139,15 @@ body {
 .section p {
   color: #444;
   line-height: 1.6;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    height: auto;
+  }
 }
