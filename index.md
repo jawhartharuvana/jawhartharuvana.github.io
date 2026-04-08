@@ -5,23 +5,23 @@ title: Muhammed Jawhar
 
 # Muhammed Jawhar
 
-Political thought. Social analysis. Structured writing.
+**Political thought. Social analysis. Structured writing.**
 
 ---
 
-## About
+## Focus
 
-I explore politics, institutions, and society through structured essays and reflections.
+I examine power, institutions, and society through clear, structured writing.
 
-This platform is not a blog. It is a record of thinking.
+This is not casual blogging. It is deliberate thinking made public.
 
 ---
 
-## Work
+## Sections
 
-- Essays  
-- Analytical notes  
-- Visual documentation  
+- Essays → Long-form arguments and analysis  
+- Notes → Short reflections and observations  
+- Photos → Visual documentation  
 
 ---
 
