@@ -1,13 +1,28 @@
 ---
-layout: home
+layout: default
 title: Muhammed Jawhar
 ---
 
-## About Me
-I am Muhammed Jawhar, 
-This platform is where I develop and publish my thinking through essays, reflections, and visual documentation.
+# Muhammed Jawhar
 
-## What you’ll find here
-- Essays on political and social issues  
-- Personal reflections and perspectives  
-- Selected photographs
+Political thought. Social analysis. Structured writing.
+
+---
+
+## About
+
+I explore politics, institutions, and society through structured essays and reflections.
+
+This platform is not a blog. It is a record of thinking.
+
+---
+
+## Work
+
+- Essays  
+- Analytical notes  
+- Visual documentation  
+
+---
+
+## Latest Writing
