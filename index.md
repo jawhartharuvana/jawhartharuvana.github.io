@@ -1,7 +1,9 @@
 <div style="text-align: center; margin-top: -60px;">
   <img src="/IMG_20260407_083832.png"
      width="160"
-     style="border-radius: 20px; border: 4px solid white; box-shadow: 0 6px 25px rgba(0,0,0,0.2);">
+     style="border-radius: 16px; 
+            border: 6px solid white; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);">
 </div>
 
 <p style="text-align: center; font-size: 18px; color: #666; margin-top: 15px;">
