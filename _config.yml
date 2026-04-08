@@ -1,5 +1,6 @@
-title: Muhammed Jawhar
-description: Writings on politics, society, and ideas
-theme: null
+title: Jawhar
+baseurl: ""
+url: "https://jawhartharuvana.github.io"
+
 markdown: kramdown
-show_downloads: false
+theme: null
