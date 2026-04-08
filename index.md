@@ -1,16 +1,17 @@
-<div style="text-align: center; margin-top: -60px;">
-  <img src="/IMG_20260407_083832.png"
-     width="160"
-     style="border-radius: 16px; object-fit: cover;
-            border: 5px solid white;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);">
-</div>
-
-<p style="text-align: center; font-size: 18px; color: #666; margin-top: 15px;">
-  Political thought. Social analysis. Structured writing.
-</p>
-
 ---
+layout: default
+title: Muhammed Jawhar
+---
+
+<div class="hero">
+
+  <img src="/IMG_20260407_083832.png" class="profile">
+
+  <p class="tagline">
+    Political thought. Social analysis. Structured writing.
+  </p>
+
+</div>
 
 ## Focus
 
@@ -30,6 +31,8 @@ This is not casual blogging. It is deliberate thinking made public.
 
 ## Latest Writing
 
-{% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }})
-{% endfor %}
+<ul>
+  {% for post in site.posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
