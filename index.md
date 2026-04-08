@@ -42,10 +42,11 @@ Political thought. Social analysis. Structured writing.
 
 <div class="section">
   <h3>Latest Writing</h3>
-  <ul>
+  <ul class="posts">
     {% for post in site.posts limit:5 %}
       <li>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
       </li>
     {% endfor %}
   </ul>
