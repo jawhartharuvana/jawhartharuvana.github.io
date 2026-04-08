@@ -29,3 +29,7 @@ This is not casual blogging. It is deliberate thinking made public.
 ---
 
 ## Latest Writing
+
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
