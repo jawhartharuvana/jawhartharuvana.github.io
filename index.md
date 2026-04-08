@@ -6,28 +6,28 @@ layout: default
 
   <!-- HERO -->
   <div class="hero">
-    
-    <!-- LEFT IMAGE -->
-    <img src="/assets/images/your-photo.jpg" class="avatar">
 
-    <!-- RIGHT TEXT -->
+    <img src="/assets/images/profile.jpg" class="avatar">
+
     <div class="hero-text">
       <h1>Muhammed Jawhar</h1>
-      
+
       <p class="subtitle">
         Political thought. Social analysis. Structured writing.
       </p>
 
-      <a href="#" class="btn primary">Read Essays</a>
-      <a href="#" class="btn secondary">Contact</a>
+      <div class="buttons">
+        <a href="#" class="btn primary">Read Essays</a>
+        <a href="#" class="btn secondary">Contact</a>
+      </div>
     </div>
 
   </div>
 
 
-  <!-- 3 CARDS -->
+  <!-- CARDS -->
   <div class="grid">
-    
+
     <div class="card">
       <h3>Focus</h3>
       <p>I examine power, institutions, and society through structured writing.</p>
@@ -46,10 +46,10 @@ layout: default
   </div>
 
 
-  <!-- LATEST WRITING -->
+  <!-- LATEST -->
   <div class="section">
     <h3>Latest Writing</h3>
-    
+
     <ul>
       <li><a href="#">ആലം... ഞാൻ</a></li>
       <li><a href="#">Why I Started Writing Publicly</a></li>
