@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="hero">
-<img src="{{ '/assets/images/profile.jpg' | relative_url }}" class="avatar">
+<img src="{{ '/assets/images/1775531266065.jpg' | relative_url }}" class="avatar">
 
 <div class="hero-text">
 <h1>Muhammed Jawhar</h1>
