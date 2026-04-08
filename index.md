@@ -5,6 +5,8 @@ title: Muhammed Jawhar
 
 # Muhammed Jawhar
 
+<img src="/assets/images/profile.jpg" width="150" style="border-radius: 50%;">
+
 **Political thought. Social analysis. Structured writing.**
 
 ---
