@@ -41,12 +41,12 @@ Political thought. Social analysis. Structured writing.
 </div>
 
 <div class="section">
-<h3>Latest Writing</h3>
-<ul>
-{% for post in site.posts limit:5 %}
-<li>
-<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-</li>
-{% endfor %}
-</ul>
+  <h3>Latest Writing</h3>
+  <ul>
+    {% for post in site.posts limit:5 %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
