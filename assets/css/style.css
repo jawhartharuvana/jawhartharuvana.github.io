@@ -20,7 +20,7 @@ body {
 
   <div class="hero-content">
 
-    <img src="{{ '/assets/images/profile' | relative_url }}" class="avatar">
+    <img src="{{ '/assets/images/1775531266065.jpg' | relative_url }}" class="avatar">
 
     <h1>Muhammed Jawhar</h1>
 
