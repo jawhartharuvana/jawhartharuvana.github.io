@@ -44,5 +44,6 @@ Political thought. Social analysis. Structured writing.
 <h3>Latest Writing</h3>
 <ul>
 <li><a href="#">Why I Started Writing Publicly</a></li>
+<li><a href="#">This is why I'm writing</a></li>
 </ul>
 </div>
