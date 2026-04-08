@@ -1,7 +1,7 @@
 <div style="text-align: center; margin-top: -60px;">
   <img src="/IMG_20260407_083832.png"
-       width="140"
-       style="border-radius: 30%; border: 5px solid white; box-shadow: 0 6px 25px rgba(0,0,0,0.2);">
+     width="160"
+     style="border-radius: 20px; border: 4px solid white; box-shadow: 0 6px 25px rgba(0,0,0,0.2);">
 </div>
 
 <p style="text-align: center; font-size: 18px; color: #666; margin-top: 15px;">
