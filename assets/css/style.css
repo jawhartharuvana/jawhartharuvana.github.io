@@ -41,8 +41,8 @@ body {
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 50px;
-  max-width: 650px;
+  padding: 40px;
+  max-width: none; /* REMOVE LIMIT */
 }
 
 /* AVATAR (BIG) */
