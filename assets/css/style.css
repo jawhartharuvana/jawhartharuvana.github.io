@@ -225,10 +225,10 @@ body {
 
   /* STACK CARDS VERTICALLY */
   .grid {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
   }
 
   .card {
