@@ -45,39 +45,53 @@ title: Home
 
   </div>
 
-  <!-- POSTS -->
-  <div class="section">
-    <h3>Latest Writings</h3>
-    <ul class="posts">
-      {% for post in site.posts limit:5 %}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+</div>
 
-  <!-- ABOUT -->
-  <div class="section">
-    <h3>About</h3>
-    <p>
-      I study power, institutions, and society. This site is a public record of structured thinking.
-    </p>
-  </div>
+<!-- EXPLORE BUTTON -->
+<div class="explore-wrapper">
+  <button onclick="showMore()" class="explore-btn">Explore Now</button>
+</div>
 
-  <!-- CTA (INSIDE container for alignment) -->
-  <div class="cta">
-    <h2>Read My Thinking</h2>
-    <p>Explore essays on power, society, and ideas that shape the world.</p>
+<!-- SECOND PART (HIDDEN INITIALLY) -->
+<div id="moreContent" class="more-content">
 
-    <div class="buttons">
-      <a href="{{ '/essays' | relative_url }}" class="btn primary">View All Essays</a>
-      <a href="https://wa.me/919656347325" class="btn secondary">Message Me</a>
+  <div class="container">
+
+    <!-- POSTS -->
+    <div class="section">
+      <h3>Latest Writings</h3>
+      <ul class="posts">
+        {% for post in site.posts limit:5 %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
+
+    <!-- ABOUT -->
+    <div class="section">
+      <h3>About</h3>
+      <p>
+        I study power, institutions, and society. This site is a public record of structured thinking.
+      </p>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+      <h2>Read My Thinking</h2>
+      <p>Explore essays on power, society, and ideas that shape the world.</p>
+
+      <div class="buttons">
+        <a href="{{ '/essays' | relative_url }}" class="btn primary">View All Essays</a>
+        <a href="https://wa.me/919656347325" class="btn secondary">Message Me</a>
+      </div>
+    </div>
+
   </div>
 
 </div>
 
-<!-- FLOATING WHATSAPP -->
+<!-- WHATSAPP FLOAT -->
 <a href="https://wa.me/919656347325" class="whatsapp-float">💬</a>
