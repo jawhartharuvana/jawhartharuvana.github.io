@@ -209,10 +209,10 @@ body {
 
   /* BIG PROFILE IMAGE ON MOBILE */
   .avatar {
-    width: 100%;
-    max-width: 240px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 220px;
+  height: 220px;
+  display: block;
+  margin: 0 auto 20px;
   }
 
   .hero h1 {
