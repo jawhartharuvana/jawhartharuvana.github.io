@@ -199,6 +199,28 @@ body {
   transform: scale(1.1);
 }
 
+.email-float {
+  position: fixed;
+  bottom: 90px; /* sits above WhatsApp */
+  right: 20px;
+  background: #ea4335;
+  color: white;
+  font-size: 20px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  z-index: 9999;
+}
+
+.email-float:hover {
+  transform: scale(1.1);
+}
+
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
 
