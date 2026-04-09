@@ -32,7 +32,7 @@ body {
     to bottom,
     rgba(0,0,0,0.65),
     rgba(0,0,0,0.35),
-    rgba(0,0,0,0.8)
+    rgba(0,0,0,0.85)
   );
   z-index: 1;
 }
@@ -42,10 +42,10 @@ body {
   position: relative;
   z-index: 2;
   padding: 40px;
-  max-width: none; /* REMOVE LIMIT */
+  max-width: none;
 }
 
-/* AVATAR (BIG) */
+/* AVATAR */
 .avatar {
   width: 100%;
   max-width: 260px;
@@ -140,6 +140,11 @@ body {
   color: white;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  background: #333;
 }
 
 /* HIDDEN CONTENT */
@@ -158,13 +163,33 @@ body {
   padding: 0;
 }
 
+/* 🔥 GRADIENT POSTS (FINAL FIX) */
 .posts li {
-  background: linear-gradient(135deg, #111827, #1f2937, #312e81);
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #581c87);
   padding: 18px;
   border-radius: 14px;
   margin-bottom: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   transition: 0.3s;
+}
+
+/* TEXT FIX (IMPORTANT) */
+.posts a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.posts .date {
+  display: block;
+  font-size: 12px;
+  color: #c7d2fe;
+}
+
+/* HOVER EFFECT */
+.posts li:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
 }
 
 /* CTA */
@@ -177,14 +202,11 @@ body {
   background: linear-gradient(135deg, #111, #1f2937);
 }
 
-/* WHATSAPP FLOAT */
-.whatsapp-float {
+/* FLOAT BUTTONS */
+.whatsapp-float,
+.email-float {
   position: fixed;
-  bottom: 20px;
   right: 20px;
-  background: #25D366;
-  color: white;
-  font-size: 22px;
   width: 55px;
   height: 55px;
   display: flex;
@@ -194,30 +216,22 @@ body {
   text-decoration: none;
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
   z-index: 9999;
+  transition: 0.3s;
 }
 
-.whatsapp-float:hover {
-  transform: scale(1.1);
+.whatsapp-float {
+  bottom: 20px;
+  background: #25D366;
+  color: white;
 }
 
 .email-float {
-  position: fixed;
-  bottom: 90px; /* sits above WhatsApp */
-  right: 20px;
+  bottom: 90px;
   background: #ea4335;
   color: white;
-  font-size: 20px;
-  width: 55px;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  text-decoration: none;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-  z-index: 9999;
 }
 
+.whatsapp-float:hover,
 .email-float:hover {
   transform: scale(1.1);
 }
@@ -236,15 +250,14 @@ body {
   }
 
   .hero-content {
-  text-align: center;
+    text-align: center;
   }
 
-  /* BIG PROFILE IMAGE ON MOBILE */
   .avatar {
-  width: 220px;
-  height: 220px;
-  display: block;
-  margin: 0 auto 20px;
+    width: 220px;
+    height: 220px;
+    display: block;
+    margin: 0 auto 20px;
   }
 
   .hero h1 {
@@ -255,12 +268,12 @@ body {
     font-size: 15px;
   }
 
-  /* STACK CARDS VERTICALLY */
+  /* FORCE STACK */
   .grid {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
   }
 
   .card {
@@ -274,5 +287,4 @@ body {
   .explore-btn {
     width: 80%;
   }
-
-  }
+}
