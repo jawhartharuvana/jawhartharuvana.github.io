@@ -14,31 +14,31 @@ body {
 }
 
 /* HERO */
-.hero::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  background: linear-gradient(to bottom, transparent, #f5f5f5);
-  z-index: 1;
+.hero {
+  position: relative;
+  z-index: 0;
+  height: 420px;
+  background: url('/assets/images/IMG_20250929_162848_518.jpg') center top/cover no-repeat;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
 }
 
-/* OVERLAY (strong depth) */
+/* DARK OVERLAY (controls readability) */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(0,0,0,0.75),
-    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.4),
     rgba(0,0,0,0.85)
   );
+  z-index: 1;
 }
 
-/* BOTTOM FADE (fixes flat ending) */
+/* BOTTOM FADE (FIXED, no full-page darkness) */
 .hero::after {
   content: "";
   position: absolute;
@@ -46,7 +46,13 @@ body {
   left: 0;
   right: 0;
   height: 80px;
-  background: linear-gradient(to bottom, transparent, #f5f5f5);
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0),
+    rgba(0,0,0,0.2),
+    #f5f5f5
+  );
+  z-index: 1;
 }
 
 /* HERO CONTENT */
@@ -116,26 +122,26 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
-/* CARD (improved depth) */
+/* CARDS */
 .card {
   background: white;
   padding: 22px;
   border-radius: 16px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px) scale(1.01);
+  transform: translateY(-8px);
   box-shadow: 0 25px 60px rgba(0,0,0,0.12);
 }
 
 /* SECTION */
 .section {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 /* POSTS */
