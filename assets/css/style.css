@@ -4,6 +4,7 @@ body {
   font-family: 'Inter', sans-serif;
   background: #f5f5f5;
   color: #111;
+  overflow-x: hidden; /* FIX horizontal overflow */
 }
 
 /* CONTAINER */
@@ -163,7 +164,7 @@ body {
   padding: 0;
 }
 
-/* 🔥 GRADIENT POSTS (FINAL FIX) */
+/* GRADIENT POSTS */
 .posts li {
   background: linear-gradient(135deg, #0f172a, #1e3a8a, #581c87);
   padding: 18px;
@@ -173,7 +174,7 @@ body {
   transition: 0.3s;
 }
 
-/* TEXT FIX (IMPORTANT) */
+/* TEXT FIX */
 .posts a {
   font-weight: 600;
   text-decoration: none;
@@ -186,7 +187,7 @@ body {
   color: #c7d2fe;
 }
 
-/* HOVER EFFECT */
+/* HOVER */
 .posts li:hover {
   transform: translateY(-5px) scale(1.01);
   box-shadow: 0 18px 40px rgba(0,0,0,0.35);
@@ -239,18 +240,21 @@ body {
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
 
+  /* 🔥 FIX RIGHT SPACE ISSUE */
   .container {
-    margin: 20px auto;
-    padding: 15px;
+    margin: 20px 12px;
+    padding: 0;
   }
 
   .hero {
     min-height: 95vh;
     border-radius: 16px;
+    margin: 0;
   }
 
   .hero-content {
     text-align: center;
+    padding: 20px;
   }
 
   .avatar {
@@ -268,7 +272,7 @@ body {
     font-size: 15px;
   }
 
-  /* FORCE STACK */
+  /* STACK CARDS */
   .grid {
     display: flex;
     flex-direction: column;
