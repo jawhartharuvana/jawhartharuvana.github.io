@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
 
-  <!-- Google Fonts -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <!-- SEO BASIC -->
+  <meta name="description" content="Muhammed Jawhar - Political thought, social analysis, structured writing.">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- CSS (FIXED PATH) -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
 <body>
-  <main class="container">
-    {{ content }}
-  </main>
-  <script>
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-});
 
-document.querySelectorAll('.card, .posts li, .cta').forEach(el => {
-  el.classList.add('hidden');
-  observer.observe(el);
-});
-                                          </script>
+  <!-- MAIN CONTENT -->
+  {{ content }}
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function showMore() {
+      document.getElementById("moreContent").style.display = "block";
+    }
+  </script>
+
 </body>
 </html>
