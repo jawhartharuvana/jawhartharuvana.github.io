@@ -15,5 +15,19 @@
   <main class="container">
     {{ content }}
   </main>
+  <script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+document.querySelectorAll('.card, .posts li, .cta').forEach(el => {
+  el.classList.add('hidden');
+  observer.observe(el);
+});
+                                          </script>
 </body>
 </html>
