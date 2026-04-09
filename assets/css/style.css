@@ -17,13 +17,13 @@ body {
 .hero {
   position: relative;
   height: 420px;
-  background: url('/assets/images/speaking.jpg') center/cover no-repeat;
+  background: url('/assets/images/1775531266065.jpg') center/cover no-repeat;
   border-radius: 20px;
   overflow: hidden;
   color: white;
 }
 
-/* DARK OVERLAY */
+/* OVERLAY */
 .hero::before {
   content: "";
   position: absolute;
@@ -39,7 +39,7 @@ body {
   max-width: 600px;
 }
 
-/* PROFILE IMAGE */
+/* AVATAR */
 .avatar {
   width: 120px;
   height: 120px;
@@ -141,7 +141,7 @@ body {
   line-height: 1.6;
 }
 
-/* MOBILE FIX */
+/* MOBILE */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
