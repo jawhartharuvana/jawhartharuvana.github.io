@@ -18,7 +18,7 @@ title: Home
       </p>
 
       <div class="buttons">
-        <a href="/essays" class="btn primary">Read Essays</a>
+        <a href="{{ '/essays' | relative_url }}" class="btn primary">Read Essays</a>
         <a href="https://wa.me/919656347325" class="btn secondary">Contact</a>
       </div>
 
@@ -66,16 +66,18 @@ title: Home
     </p>
   </div>
 
-</div>
+  <!-- CTA (INSIDE container for alignment) -->
+  <div class="cta">
+    <h2>Read My Thinking</h2>
+    <p>Explore essays on power, society, and ideas that shape the world.</p>
 
-<div class="cta">
-  <h2>Read My Thinking</h2>
-  <p>Explore essays on power, society, and ideas that shape the world.</p>
-
-  <div class="buttons">
-    <a href="/essays" class="btn primary">View All Essays</a>
-    <a href="https://wa.me/91XXXXXXXXXX" class="btn secondary">Message Me</a>
+    <div class="buttons">
+      <a href="{{ '/essays' | relative_url }}" class="btn primary">View All Essays</a>
+      <a href="https://wa.me/919656347325" class="btn secondary">Message Me</a>
+    </div>
   </div>
+
 </div>
 
+<!-- FLOATING WHATSAPP -->
 <a href="https://wa.me/919656347325" class="whatsapp-float">💬</a>
