@@ -17,7 +17,7 @@ body {
 .hero {
   position: relative;
   height: 420px;
-  background: url('/assets/images/1769350946115.jpg') center top/cover no-repeat;
+  background: url('/assets/images/1769350946115.jpg') center top/cover;
   border-radius: 20px;
   overflow: hidden;
   color: white;
