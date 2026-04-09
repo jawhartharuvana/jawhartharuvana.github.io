@@ -159,11 +159,12 @@ body {
 }
 
 .posts li {
-  background: white;
-  padding: 16px;
-  border-radius: 12px;
+  background: linear-gradient(135deg, #111827, #1f2937, #312e81);
+  padding: 18px;
+  border-radius: 14px;
   margin-bottom: 14px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: 0.3s;
 }
 
 /* CTA */
