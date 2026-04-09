@@ -7,8 +7,22 @@
 
   <title>{{ page.title }} | {{ site.title }}</title>
 
-  <!-- SEO BASIC -->
+  <!-- SEO -->
   <meta name="description" content="Muhammed Jawhar - Political thought, social analysis, structured writing.">
+  <meta name="author" content="Muhammed Jawhar">
+
+  <!-- OPEN GRAPH (for WhatsApp / social sharing) -->
+  <meta property="og:title" content="Muhammed Jawhar">
+  <meta property="og:description" content="Political thought, social analysis, structured writing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:image" content="{{ '/assets/images/1775531266065.jpg' | absolute_url }}">
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Muhammed Jawhar">
+  <meta name="twitter:description" content="Political thought, social analysis, structured writing.">
+  <meta name="twitter:image" content="{{ '/assets/images/1775531266065.jpg' | absolute_url }}">
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
@@ -26,9 +40,18 @@
   <!-- JAVASCRIPT -->
   <script>
     function showMore() {
-      document.getElementById("moreContent").style.display = "block";
+      const section = document.getElementById("moreContent");
+
+      if (section.style.display === "block") return;
+
+      section.style.display = "block";
+
+      window.scrollTo({
+        top: section.offsetTop - 40,
+        behavior: "smooth"
+      });
     }
   </script>
 
 </body>
-</html>
+    </html>
