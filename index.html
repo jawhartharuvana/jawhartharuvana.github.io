@@ -3,59 +3,67 @@ layout: default
 title: Home
 ---
 
-<div class="hero">
+<div class="container">
 
-  <img src="{{ '/assets/images/1775531266065.jpg' | relative_url }}" class="avatar">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
 
-  <div class="hero-text">
-    <h1>Muhammed Jawhar</h1>
+      <img src="{{ '/assets/images/1775531266065.jpg' | relative_url }}" class="avatar">
 
-    <p class="subtitle">
-      Political thought. Social analysis. Structured writing.
-    </p>
+      <h1>Muhammed Jawhar</h1>
 
-    <div class="buttons">
-      <a href="/essays" class="btn primary">Read Essays</a>
-      <a href="/about" class="btn secondary">Contact</a>
+      <p class="subtitle">
+        Political thought. Social analysis. Structured writing.
+      </p>
+
+      <div class="buttons">
+        <a href="/essays" class="btn primary">Read Essays</a>
+        <a href="/about" class="btn secondary">Contact</a>
+      </div>
+
     </div>
   </div>
 
-</div>
+  <!-- GRID -->
+  <div class="grid">
 
-<div class="grid">
+    <div class="card">
+      <h3>Focus</h3>
+      <p>I examine power, institutions, and society through structured writing.</p>
+    </div>
 
-  <div class="card">
-    <h3>Focus</h3>
-    <p>I examine power, institutions, and society through structured writing.</p>
+    <div class="card">
+      <h3>Work</h3>
+      <p>Long-form essays, notes, and visual documentation.</p>
+    </div>
+
+    <div class="card">
+      <h3>Approach</h3>
+      <p>Not blogging. Deliberate thinking made public.</p>
+    </div>
+
   </div>
 
-  <div class="card">
-    <h3>Work</h3>
-    <p>Long-form essays, notes, and visual documentation.</p>
+  <!-- POSTS -->
+  <div class="section">
+    <h3>Latest Writing</h3>
+    <ul class="posts">
+      {% for post in site.posts limit:5 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 
-  <div class="card">
-    <h3>Approach</h3>
-    <p>Not blogging. Deliberate thinking made public.</p>
+  <!-- ABOUT -->
+  <div class="section">
+    <h3>About</h3>
+    <p>
+      I study power, institutions, and society. This site is a public record of structured thinking.
+    </p>
   </div>
 
-</div>
-
-<div class="section">
-  <h3>Latest Writing</h3>
-  <ul class="posts">
-    {% for post in site.posts limit:5 %}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
-
-<div class="section">
-  <h3>About</h3>
-  <p>
-    I study power, institutions, and society. This site is a public record of structured thinking.
-  </p>
 </div>
